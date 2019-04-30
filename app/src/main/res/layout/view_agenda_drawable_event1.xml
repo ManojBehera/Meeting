@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mavenir.mavenirmeeting.agenda.AgendaEventView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/view_agenda_event_description_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+        <TextView
+            android:id="@+id/view_agenda_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meeting 1"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/view_agenda_event_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_agenda_event_title"
+            android:layout_marginTop="1dip"
+            android:text="4 PM - 5 PM"
+            android:textColor="#343434"
+            android:textSize="10dip" />
+
+
+        <!-- Rightend Arrow -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</com.mavenir.mavenirmeeting.agenda.AgendaEventView>
